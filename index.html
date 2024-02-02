@@ -7,8 +7,16 @@
     <meta name="description" content="Semih Aydin's course assignment portal for WDD 230 - Web Frontend Development. Learn about web development, design principles, and more.">
     <meta name="author" content="Semih Aydin">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- New CSS normalization file -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css"> <!-- New larger.css file with media query -->
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Semih Aydin's WDD 230 Portal">
+    <meta property="og:description" content="Learn about web development, design principles, and more.">
+    <meta property="og:image" content="images/image.jpeg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd230">
 </head>
+<body>
 <body>
     <header>
         <div class="profile">
@@ -50,10 +58,9 @@
             </ul>
         </section>
 
-        <section class="card">
+        <section class="card information"> <!-- Added 'information' class -->
             <h3>Information</h3>
             <p id="pageVisitsCount"></p>
-            <script src="scripts/getdates.js" defer></script>
         </section>
     </main>
     <footer>

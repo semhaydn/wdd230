@@ -1,0 +1,51 @@
+/* larger.css */
+
+/* Media query for larger views (min-width: 768px) */
+@media (min-width: 768px) {
+    /* Add your larger view styles here */
+
+    header {
+        padding: 30px; /* Adjust padding for larger header */
+    }
+
+    .profile img {
+        height: 150px; /* Adjust profile picture size for larger views */
+        width: 150px;
+    }
+
+    .profile h1 {
+        font-size: 24px; /* Adjust profile name font size for larger views */
+    }
+
+    nav ul {
+        flex-direction: row; /* Display navigation links horizontally for larger views */
+    }
+
+    nav li {
+        margin-right: 30px; /* Adjust margin between navigation links for larger views */
+    }
+
+    main {
+        max-width: 1000px; /* Adjust max-width for larger content area */
+    }
+
+    main section {
+        margin: 30px 0; /* Adjust margin for larger section spacing */
+    }
+
+    main section.card {
+        padding: 30px; /* Adjust padding for larger card sections */
+    }
+
+    main section h2 {
+        font-size: 28px; /* Adjust heading font size for larger views */
+    }
+
+    main section ul {
+        margin-left: 20px; /* Adjust margin for list items in larger views */
+    }
+
+    footer {
+        padding: 30px; /* Adjust padding for larger footer */
+    }
+}
