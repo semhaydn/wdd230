@@ -1,3 +1,5 @@
+/* base.css */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -89,10 +91,6 @@ main section h3 {
 /* Additional styling for the information section */
 main section.card.information {
     background-color: #E9EBEC;
-}
-
-/* Updated selector for information section */
-main section.card.information {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
