@@ -6,6 +6,7 @@ body {
 }
 
 header {
+    position: relative;
     background-color: #264653;
     color: white;
     display: flex;
@@ -162,7 +163,7 @@ nav li {
 
 /* Pseudo-element for the header */
 header::after {
-    content: '\1F60D'; /* Emoji code for a smiley face */
+    /* content: '\1F60D'; */ /* Emoji code for a smiley face - Consider removing this line */
     font-size: 2rem;
     margin-left: 10px;
 }
