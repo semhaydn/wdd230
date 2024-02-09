@@ -21,3 +21,8 @@ function displayPageVisits() {
     // Display the value in the page footer
     document.querySelector('#pageVisitsCount').innerText = `Page Visits: ${visits}`;
 }
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu-list');
+    menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
+}

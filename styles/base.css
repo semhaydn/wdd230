@@ -128,3 +128,43 @@ nav li {
         column-gap: 20px; /* Adjust gap between columns as needed */
     }
 }
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+/* Show menu items in larger view */
+@media (min-width: 768px) {
+    .hamburger-menu {
+        align-items: center;
+    }
+
+    .menu-list {
+        display: flex;
+    }
+}
+
+/* Pseudo-element for the header */
+header::after {
+    content: '\1F60D'; /* Emoji code for a smiley face */
+    font-size: 2rem;
+    margin-left: 10px;
+}
