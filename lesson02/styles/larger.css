@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    /* CSS rules for larger views */
+    section.card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* CSS rules for even larger views */
+    section.card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Add your styles for larger views as needed */
