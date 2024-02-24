@@ -1,0 +1,118 @@
+/* base.css */
+
+/* Reset styles */
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #336699;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding-bottom: 60px;
+}
+
+/* Section styles */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #336699;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #336699;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #336699;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Adjustments for mobile view */
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
