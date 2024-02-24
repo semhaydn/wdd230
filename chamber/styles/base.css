@@ -95,8 +95,9 @@ main section.card.information {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 100;
+    height: 100px; /* Add a unit, for example, pixels */
 }
+
 
 .hero img {
     width: 100%;
