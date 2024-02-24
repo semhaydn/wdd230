@@ -10,7 +10,7 @@ header {
     background-color: #264653;
     color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 }
@@ -25,10 +25,6 @@ header {
     height: 100px;
     margin-right: 20px;
     width: 100px;
-}
-
-.profile h1 {
-    margin: 0;
 }
 
 nav ul {
@@ -59,11 +55,6 @@ main section {
 main section h2 {
     text-decoration: underline;
     color: #2A9D8F;
-}
-
-main section ul {
-    list-style: none;
-    padding: 0;
 }
 
 footer {
@@ -100,7 +91,7 @@ main section.card.information {
 
 nav ul {
     display: flex;
-    flex-direction: column; /* Display navigation links vertically for mobile */
+    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -111,20 +102,19 @@ nav li {
 }
 
 @media (min-width: 768px) {
-    /* CSS rules for larger views */
     nav ul {
-        flex-direction: row; /* Display navigation links horizontally for larger views */
+        flex-direction: row;
     }
 
     nav li {
         margin-right: 20px;
-        margin-bottom: 0; /* Remove bottom margin for larger views */
+        margin-bottom: 0;
     }
 
     main section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns for larger views */
-        column-gap: 20px; /* Adjust gap between columns as needed */
+        grid-template-columns: 1fr;
+        column-gap: 20px;
     }
 }
 
@@ -150,7 +140,6 @@ nav li {
     margin-bottom: 10px;
 }
 
-/* Show menu items in larger view */
 @media (min-width: 768px) {
     .hamburger-menu {
         align-items: center;
@@ -161,21 +150,18 @@ nav li {
     }
 }
 
-/* Pseudo-element for the header */
 header::after {
-    /* content: '\1F60D'; */ /* Emoji code for a smiley face - Consider removing this line */
     font-size: 2rem;
     margin-left: 10px;
 }
 
-/* Additional styling for the logo */
 .logo {
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-/* Styling for navigation */
 nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -196,10 +182,17 @@ nav a {
     font-weight: bold;
 }
 
-/* Additional styling for the hero image */
+/* Additional styling for the hero section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100;
+}
+
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Additional styling for the card sections */
