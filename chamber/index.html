@@ -40,15 +40,14 @@
                 </ul>
             </nav>
         </div>
-        <div class="header-content">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    
         <div class="dark-mode-toggle">
             <input type="checkbox" id="dark-mode-switch">
             <label for="dark-mode-switch"></label>
         </div>
-    </header>
-    <main>
+        
+        
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    </header>    <main>
         <section class="hero">
             <h2>Istanbul</h2>
             <img src="images/hero-image.jpg" alt="Istanbul Cityscape">
@@ -83,9 +82,9 @@
             <!-- Placeholder content -->
         </section>
     </main>
-    <script>
+  <script>
         const darkModeToggle = document.getElementById('dark-mode-switch');
-        const menuToggle = document.querySelector('.menu-icon');
+        const menuToggle = document.getElementById('menu-toggle');
         const nav = document.querySelector('nav');
         const body = document.body;
     
@@ -93,11 +92,10 @@
             body.classList.toggle('dark-mode', darkModeToggle.checked);
         });
     
-        menuToggle.addEventListener('click', () => {
+        menuToggle.addEventListener('change', () => {
             nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
         });
     </script>
-    
     
     <footer>
         <!-- Contact Information -->
