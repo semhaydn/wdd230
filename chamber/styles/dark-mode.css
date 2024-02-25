@@ -1,0 +1,95 @@
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode-toggle input {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.dark-mode-toggle label:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    transition: 0.3s;
+}
+
+.dark-mode-toggle input:checked + label {
+    background-color: #2A2A2A;
+}
+
+.dark-mode-toggle input:checked + label:after {
+    left: 21px;
+}
+
+body.dark-mode header,
+body.dark-mode main,
+body.dark-mode footer
+body.dark-mode section {
+    background-color: #2A2A2A;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p {
+    color: white;
+}
+
+body.dark-mode nav a,
+body.dark-mode footer p {
+    color: #ccc;
+}
+
+body.dark-mode main {
+    background-color: #2A2A2A;
+}
+
+body.dark-mode main h2 {
+    color: white;
+}
+
+body.dark-mode main p {
+    color: #ccc;
+}
+
+body.dark-mode .hero img {
+    filter: brightness(50%); /* Optional: Adjust image brightness */
+}
+
+body.dark-mode main section {
+    background-color: #2A2A2A;
+    color: white; /* Set text color to white */
+}
+
+body.dark-mode footer {
+    background-color: #2A2A2A;
+    color: white; /* Set text color to white */
+}
+

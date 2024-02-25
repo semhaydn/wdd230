@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1200px)">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/dark-mode.css" id="dark-mode-stylesheet">
 </head>
 <body>
 
@@ -38,6 +39,10 @@
                 </ul>
             </nav>
         </div>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-switch">
+            <label for="dark-mode-switch"></label>
+        </div>        
     </header>
     <main>
         <section class="hero">
@@ -74,7 +79,14 @@
             <!-- Placeholder content -->
         </section>
     </main>
-
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-switch');
+        const body = document.body;
+    
+        darkModeToggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode', darkModeToggle.checked);
+        });
+    </script>
     <footer>
         <!-- Contact Information -->
         <p>Contact: ayd23002@byui.edu </p>
@@ -88,6 +100,7 @@
             lastModifiedElement.textContent = lastModified.toLocaleString();
         </script>
     </footer>
+
 
 </body>
 
