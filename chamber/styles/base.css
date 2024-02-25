@@ -76,6 +76,7 @@ main section.card.information {
     background-color: #E9EBEC;
 }
 
+
 @media (min-width: 768px) {
     nav ul {
         flex-direction: row;
@@ -108,7 +109,7 @@ main section.card.information {
 footer {
     background-color: #264653;
     border-top: 1px solid #ccc;
-    color: #ffffff;
+    color: #ccc;
     font-size: 0.8em;
     margin-top: 20px;
     padding: 20px;
@@ -138,3 +139,9 @@ header {
 h1 {
     margin: 0;
 }
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
