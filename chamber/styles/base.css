@@ -168,3 +168,60 @@ header h1 {
     height: 100%;
 }
 
+
+/* Add these styles for the sidebar layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Adjust the column ratios as needed */
+    grid-gap: 20px; /* Adjust the gap between columns */
+}
+
+/* Adjust the styles for the card section to fit the new layout */
+main section.card {
+    grid-column: 2 / span 1; /* Position the card section in the second column */
+}
+
+/* Additional styling for the sidebar */
+main section.sidebar {
+    grid-column: 1 / span 1; /* Position the sidebar section in the first column */
+}
+
+/* Mobile view: Single column layout */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+}
+
+/* Add these styles for image hover effect */
+.main-content img {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.main-content img:hover {
+    transform: scale(1.1); /* Increase the scale on hover (adjust as needed) */
+}
+
+/* Add styles for lazy-loaded images */
+.main-content .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.main-content .image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Add styles for the sidebar content */
+.sidebar {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  
