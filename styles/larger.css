@@ -3,7 +3,7 @@
 /* Media query for larger views (min-width: 768px) */
 @media (min-width: 768px) {
     /* Add your larger view styles here */
-
+    
     header {
         padding: 30px; /* Adjust padding for larger header */
     }
