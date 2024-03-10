@@ -220,3 +220,17 @@ main {
 	font-size: 1.5rem;
 	font-family:"Great Vibes", serif;
 }
+
+/* Add these styles to your existing CSS file */
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.map-container iframe {
+    max-width: 150%;
+    height: 100px; /* Adjust height as needed */
+}
