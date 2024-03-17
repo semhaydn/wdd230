@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semih Aydin - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Semih Aydin's course assignment portal for WDD 230 - Web Frontend Development. Learn about web development, design principles, and more.">
+    <title>Semih Aydin - WDD 230 - Web Frontend Development- Form</title>
+    <meta name="description" content="Semih Aydin's course assignment portal for WDD 230 - Web Frontend Development. Submimission of a form ">
     <meta name="author" content="Semih Aydin">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
@@ -43,6 +43,7 @@
     </header>
 
     <main>
+        <!-- First Form -->
         <form action="record.html" method="get">
             <div>
                 <label for="username">Username:</label>
@@ -65,6 +66,15 @@
                 <label for="page-rating">Page Rating:</label>
                 <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" oninput="updateRatingValue()">
                 <span id="rating-value">5</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Second Form -->
+        <form action="record.html" method="get">
+            <div>
+                <label for="other-field">Other Field:</label>
+                <input type="text" id="other-field" name="other-field" required>
             </div>
             <button type="submit">Submit</button>
         </form>
@@ -99,4 +109,4 @@
     <script src="scripts/menu.js" defer></script>
 </body>
 
-</html>
+</html
