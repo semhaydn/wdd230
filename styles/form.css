@@ -1,15 +1,18 @@
 /* form.css */
 
+/* Define global variables */
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
     --font-family: Arial, sans-serif;
 }
 
+/* Apply styles to the body */
 body {
     font-family: var(--font-family);
 }
 
+/* Apply styles to the form container */
 form {
     display: flex;
     flex-direction: column;
@@ -18,11 +21,13 @@ form {
     max-width: 400px;
 }
 
+/* Apply styles to the labels */
 label {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
+/* Apply styles to the input and textarea elements */
 input,
 textarea {
     width: 100%;
@@ -32,6 +37,7 @@ textarea {
     border-radius: 4px;
 }
 
+/* Apply styles to the button */
 button {
     background-color: var(--primary-color);
     color: #fff;
@@ -41,16 +47,33 @@ button {
     cursor: pointer;
 }
 
+/* Apply hover effect to the button */
 button:hover {
     background-color: #0056b3;
 }
 
+/* Apply styles to error messages */
 .error-message {
     color: red;
     margin-top: 0.5rem;
 }
 
+/* Apply styles to success messages */
 .success-message {
     color: green;
     margin-top: 0.5rem;
+}
+
+/* Apply styles to the form fields */
+/* Ensure proper alignment and spacing */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/* Apply styles to the span displaying the rating value */
+#rating-value {
+    font-weight: bold;
+    margin-left: 0.5rem;
 }
