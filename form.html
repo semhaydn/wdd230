@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semih Aydin - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Semih Aydin's course assignment portal for WDD 230 - Web Frontend Development. Learn about web development, design principles, and more.">
+    <meta name="author" content="Semih Aydin">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Semih Aydin's WDD 230 Portal">
+    <meta property="og:description" content="Learn about web development, design principles, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://semhaydn.github.io/wdd230/images/image.webp">
+    <meta property="og:url" content="https://semhaydn.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/image.webp" alt="Profile Picture">
+            <h1>Semih Aydin</h1>
+        </div>
+        <nav>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="chamber/">Chamber</a></li>
+                    <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="record.html" method="get"></form>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}">
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required oninput="checkPasswordMatch()">
+                <span id="password-match-error" style="display: none; color: red;">Passwords do not match.</span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$">
+            </div>
+            <div>
+                <label for="page-rating">Page Rating:</label>
+                <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" oninput="updateRatingValue()">
+                <span id="rating-value">5</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+            function checkPasswordMatch() {
+                var password = document.getElementById("password").value;
+                var confirmPassword = document.getElementById("confirm-password").value;
+                var passwordMatchError = document.getElementById("password-match-error");
+                
+                if (password !== confirmPassword) {
+                    passwordMatchError.style.display = "inline";
+                } else {
+                    passwordMatchError.style.display = "none";
+                }
+            }
+            
+            function updateRatingValue() {
+                var ratingValue = document.getElementById("rating-value");
+                var pageRating = document.getElementById("page-rating").value;
+                
+                ratingValue.textContent = pageRating;
+            }
+        </script>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Semih Aydin Turkey <span id="lastModified"></span></p>
+        <script src="scripts/pagevisits.js" defer></script>
+    </footer>
+    
+    <script src="scripts/menu.js" defer></script>
+</body>
+
+</html>
