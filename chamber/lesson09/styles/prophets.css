@@ -1,0 +1,55 @@
+/* Reset some default styling */
+body, div, h1, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards .card {
+    background-color: #e6e6ff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-top: 15px;
+    color: #333366;
+}
+
+.card p {
+    color: #666699;
+}
+
+footer {
+    background-color: #333366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
