@@ -47,61 +47,31 @@
         
         
         <button id="menu-toggle" class="menu-icon">&#9776;</button>
-    </header>  
-
+    </header>    
     <main>
-        <div class="container">
-            <form action="thankyou.html" method="get">
-                <h2>Membership Application</h2>
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required>
-    
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required>
-    
-                    <label for="title">Title/Position:</label>
-                    <input type="text" id="title" name="title" required pattern="[a-zA-Z -]{7,}">
-    
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
-    
-                    <label for="phone">Mobile Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Organization Information</legend>
-                    <label for="organization">Business/Organization Name:</label>
-                    <input type="text" id="organization" name="organization" required>
-    
-                    <label for="membershipLevel">Membership Level:</label>
-                    <select id="membershipLevel" name="membershipLevel">
-                        <option value="NP">Non-Profit Membership (Free)</option>
-                        <option value="Bronze">Bronze Membership</option>
-                        <option value="Silver">Silver Membership</option>
-                        <option value="Gold">Gold Membership</option>
-                    </select>
-    
-                    <label for="description">Organization Description:</label>
-                    <textarea id="description" name="description"></textarea>
-                </fieldset>
-    
-                <input type="hidden" id="timestamp" name="timestamp">
-    
-                <button type="submit">Submit Application</button>
-            </form>
-    
-            <aside>
-                <h3>Membership Benefits</h3>
-                <!-- Display membership benefits here -->
-            </aside>
-        </div>
-    
-        <script>
-            document.getElementById("timestamp").value = Date.now();
-        </script>
+        {
+            "members": [
+                {
+                    "name": "Company 1",
+                    "address": "Address 1",
+                    "phone": "Phone 1",
+                    "website": "Website 1",
+                    "image": "image1.jpg",
+                    "membershipLevel": "Level 1",
+                    "otherInfo": "Other info 1"
+                },
+                {
+                    "name": "Company 2",
+                    "address": "Address 2",
+                    "phone": "Phone 2",
+                    "website": "Website 2",
+                    "image": "image2.jpg",
+                    "membershipLevel": "Level 2",
+                    "otherInfo": "Other info 2"
+                },
+                // Add more member objects as needed
+            ]
+        }
     </main>
 
 <!-- Include the windchill.js script at the end of your body -->
