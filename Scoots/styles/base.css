@@ -1,82 +1,109 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Montserrat', sans-serif; /* Or choose another font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333; 
 }
 
-.container {
-    max-width: 1100px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-}
-
-/* Header */
 header {
-    background-color: #f0f0f0; 
-    padding: 20px 0; 
-    border-bottom: 1px solid #ddd; 
+    background-color: #29abe2; /* Ocean blue */
+    color: white; 
+    padding: 20px;
 }
 
+/* Simplified Navigation Styling */
 nav ul {
-    list-style: none; 
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline-block; 
-    margin-right: 20px; 
+nav li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav ul li a {
-    text-decoration: none; 
-    color: #555; 
-}
-
-nav ul li a.active {
-    font-weight: bold; 
-}
-
-/* Main Content Sections */
-section {
-    padding: 40px 0;
-}
-
-h2, h3 { 
-    margin-bottom: 20px;
-}
-
-/* Hero Styles */
-.hero {
-    background: #ffe0b2; /* Replace with your image later */ 
-    color: #444; 
-    padding: 40px;
-    text-align: center;
-}
-
-.hero-image img {
-    max-width: 100%; 
-    height: auto; 
-    margin-top: 20px; 
-}
-
-.button {
-    background-color: #008cba; 
+nav a {
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
     text-decoration: none;
 }
 
-/* Footer */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+main section {
+    margin: 20px 0;
+}
+
+main section h2 {
+    text-decoration: underline;
+    color: #fff; /* White for contrast */
+}
+
 footer {
-    background-color: #333;
+    background-color: #f5f0e1; /* Sandy color */
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Card Styles */
+main section.card {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/cozumel-beach.jpg'); /* Your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 20px 0;
+    position: relative; /* For overlay text */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    padding: 20px 0;
+}
+
+.hero-overlay h2 {
+    margin-bottom: 10px; 
+}
+
+/* Call to Action Button */
+.button {
+    background-color: #e84393; /* Bold pink */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8; 
+}
+
+/* ... Other Sections (Rentals, Contact, etc.) ... */
+
+/* Media Query for Responsiveness */
+@media (min-width: 768px) {
+    nav ul { 
+        display: flex; 
+    }
 }
