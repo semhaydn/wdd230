@@ -64,27 +64,41 @@
             
 
               </div>
-          
+              <section class="location-info">
+                <div class="container">
+                   <h3>Our Location</h3> 
+                   <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Av.%20Rafael%20E.%20Melgar%20entre%20Avenida%2017%20sur%20y%20Avenida%20xel-ha,%20Centro,%2077600%20Cozumel,%20Q.R.,%20Mexico+(Scoots%20Rentals)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>                   
+                   <p>Scoots Rentals <br>
+                     Gonzalo Guerrero, 77664
+                     Cozumel, Mexico <br>
+                  </p> 
+                </div>
+              </section>
+              
             </div>
-          </section>
-          
-
-        <section class="weather-info">
-            <div class="container">
-                </div>
-        </section>
-
-        <section class="social">
-            <div class="container">
-                <h3>Follow Us</h3>
-                </div>
-        </section> 
+ 
     </main>
     <footer>
-        <p>©<span id="currentyear"></span> Scoots - Cozumel</p> 
-        <p><a href="contact.html">Contact Us</a> </p> 
-    </footer>
-    
-
-    <script src="script.js"></script> </body>
-</html>
+        <div class="container">
+          <div class="footer-info">
+            <p>©<span id="currentyear"></span> Scoots - Cozumel</p> 
+          </div>
+      
+          <section class="card information">
+            <h3>Information</h3>
+            <p id="pageVisitsCount"></p> 
+          </section>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>©<span id="currentyear-bottom"></span> <span id="lastModified"></span></p>
+        </div>
+      
+        <div class="weather-message" id="weatherMessage">
+          <button id="closeWeatherMessage">Close</button> 
+        </div>
+      
+        <script src="scripts/getdates.js" defer></script> 
+        <script src="scripts/pagevisits.js" defer></script> 
+        <script src="scripts/weather.js" defer></script> </footer>
+      

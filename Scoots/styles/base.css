@@ -175,3 +175,30 @@ img {
       background-color: #fafafa; /* Light striping */
   }
   
+  .weather-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e84393; /* Your accent color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none; /* Hidden initially */
+  }
+  
+  .location-info {
+    margin: 20px 0; /* Adjust spacing */
+  }
+  
+  .location-info p {
+     text-align: center;
+  }
+  
+  .location-info img,
+  .location-info iframe {
+    max-width: 100%; 
+    margin: 0 auto;
+    display: block;
+  }
+  
