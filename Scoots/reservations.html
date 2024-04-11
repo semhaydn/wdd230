@@ -46,7 +46,23 @@
 </body>
 
 <footer>
-    <p>©<span id="currentyear"></span> Scoots - Cozumel</p> 
-    <p><a href="contact.html">Contact Us</a> </p> 
-</footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>©<span id="currentyear"></span> Scoots - Cozumel</p> 
+      </div>
+  
+      <section class="card information">
+        <h3>Information</h3>
+        <p id="pageVisitsCount"></p> 
+      </section>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>©<span id="currentyear-bottom"></span> <span id="lastModified"></span></p>
+    </div>
+    <script src="scripts/getdates.js" defer></script> 
+    <script src="scripts/pagevisits.js" defer></script> 
+    <script src="scripts/weather.js" defer></script> 
+  </footer>
+  
 </html>

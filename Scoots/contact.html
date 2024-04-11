@@ -18,7 +18,8 @@
     <meta property="og:image" content="https://your-website.com/images/scoots-hero.jpg"> 
     <meta property="og:url" content="https://your-website.com/"> 
 </head>
-</html>
+<body>
+
     <header>
         <div class="container">  <h1>Scoots</h1>
             <nav>
@@ -33,50 +34,34 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Explore Cozumel Your Way</h2>
-                <p>Rent a scooter, ATV, or Jeep and discover the island's hidden gems.</p>
-                <a href="reservations.html" class="button">Reserve Now</a>
-            </div>
-            <div class="hero-image">
-                    <div class="hero-image"> 
-                        <img src="images/cozumel-beach.jpg" alt="Scooter cruising along the Cozumel coast">
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <section class="rentals-summary">
-            <div class="container">
-              <h3>Our Rentals</h3>
-          
-              <div class="rentals-grid">
-                  <div class="rental-item">
-                  <img src="images/cozumel-scooter.jpg" alt="Scooter cruising along the Cozumel coast"> 
-                </div>
-                <div class="rental-item">
-                  <img src="images/cosumel-jeep-image.jpg" alt="Jeep on Cozumel"> 
-                </div>      
-                <div class="rental-item">
-                  <img src="images/cosumel-atv-image.jpg" alt="ATV in Cozumel"> 
-                </div>
-                <div class="weather-message" id="weatherMessage">
-                  <span id="currentHighTemp"></span> 
-                  <button id="closeWeatherMessage">Close</button> 
-                </div>
-                
-                <section class="weather-info">
-                  <div class="container">
-                    <h3 id="currentWeatherTitle">Current Weather</h3>
-                    <div id="weatherIcon"></div>
-                    <p>Temperature: <span id="currentTemp"></span></p> 
-                    <p>Humidity: <span id="currentHumidity"></span></p> 
-                    <h3 id="nextDayWeatherTitle">Tomorrow (3:00 PM)</h3> 
-                    <p>Temperature: <span id="nextDayTemp"></span></p> 
-                  </div>
-                </section>
-
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+<section class="location-info">
+  <div class="container">
+     <h3>Our Location</h3> 
+     <div style="width: 60%"><iframe width="120%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Av.%20Rafael%20E.%20Melgar%20entre%20Avenida%2017%20sur%20y%20Avenida%20xel-ha,%20Centro,%2077600%20Cozumel,%20Q.R.,%20Mexico+(Scoots%20Rentals)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>                   
+     <p>Scoots Rentals <br>
+       Gonzalo Guerrero, 77664
+       Cozumel, Mexico <br>
+    </p> 
+  </div>
+</section>
+</div>
+    
     </main>
     <footer>
         <div class="container">
@@ -98,3 +83,5 @@
         <script src="scripts/weather.js" defer></script> 
       </footer>
       
+</body>
+</html>
