@@ -187,18 +187,17 @@ img {
     display: none; /* Hidden initially */
   }
   
-  .location-info {
-    margin: 20px 0; /* Adjust spacing */
+  .location-info .map-container {
+    position: relative; /* Contain the iframe */
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+    height: 0;
   }
   
-  .location-info p {
-     text-align: center;
-  }
-  
-  .location-info img,
-  .location-info iframe {
-    max-width: 100%; 
-    margin: 0 auto;
-    display: block;
+  .location-info .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
   }
   
