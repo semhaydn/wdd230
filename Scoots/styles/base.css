@@ -212,3 +212,24 @@ img {
     text-align: center;
   }
   
+  .reservations {
+    margin: 20px 0; /* Adjust spacing */
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .rental-agreement {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+
+  #reservation-form {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px; 
+  }
+
+  .form-group {
+    margin-bottom: 10px; 
+  }

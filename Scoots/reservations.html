@@ -32,17 +32,78 @@
         </div>
     </header>
     <main>
-        <section class="rental-agreement">
-            </section>
+      <section class="reservations"> 
+        <div class="container"> 
+          <h2>Rental Reservations</h2>
 
-        <section class="reservation-form">
-            <h2>Make Your Reservation</h2>
-            <form id="reservation-form">
-                </form>
-        </section>
+          <div class="rental-agreement">
+            <h3>Rental Agreement Information</h3>
+            <p>Please read and agree to the rental agreement terms and conditions before submitting your reservation.</p>
+            <a href="path/to/rental-agreement.pdf">Rental Agreement Terms and Conditions</a>
+          </div>
+          <form id="reservation-form">
+            <div class="form-group">
+              <label for="rentalDate">Rental Date:</label>
+              <input type="date" id="rentalDate" name="rentalDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rentalPeriod">Rental Period:</label>
+              <input type="text" id="rentalPeriod" name="rentalPeriod" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rentalType">Rental Type:</label>
+              <select id="rentalType" name="rentalType" required>
+                <option value="">Select Type</option>
+                <option value="scooter">Scooter</option> 
+                <option value="atv">ATV</option>
+                <option value="jeep">Jeep</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rentalNumber">Number of Rentals:</label>
+              <input type="number" id="rentalNumber" name="rentalNumber" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fullName">Full Name:</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="homeState">Home State or Country:</label>
+              <input type="text" id="homeState" name="homeState" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cruiseLine">Cruise Line (if applicable):</label>
+              <input type="text" id="cruiseLine" name="cruiseLine">
+            </div>
+
+            <div class="form-group">
+              <label for="accommodations">Special Accommodations/Comments:</label>
+              <textarea id="accommodations" name="accommodations"></textarea>
+            </div>
+
+            <button type="submit">Submit Reservation</button>
+          </form> 
+        </div>
+      </section>
+
     </main>
 
-    <script src="script.js"></script>
 </body>
 
 <footer>
@@ -63,6 +124,7 @@
     <script src="scripts/getdates.js" defer></script> 
     <script src="scripts/pagevisits.js" defer></script> 
     <script src="scripts/weather.js" defer></script> 
+    <script src="scripts/reservations.js" defer></script>
   </footer>
   
 </html>
