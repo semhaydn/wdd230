@@ -201,3 +201,14 @@ img {
     height: 100%; 
   }
   
+  .weather-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e84393; /* Your accent color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
